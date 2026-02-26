@@ -331,26 +331,57 @@ h1 {
 .xhs-cover {
   aspect-ratio: 4 / 3;
   padding: 12px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   color: #fff;
-}
-
-.xhs-card:nth-child(4n + 1) .xhs-cover {
   background: linear-gradient(145deg, #0f766e, #2b9f92);
 }
 
-.xhs-card:nth-child(4n + 2) .xhs-cover {
+.xhs-cover.no-image::after {
+  display: none;
+}
+
+.xhs-card:nth-child(4n + 1) .xhs-cover.no-image {
+  background: linear-gradient(145deg, #0f766e, #2b9f92);
+}
+
+.xhs-card:nth-child(4n + 2) .xhs-cover.no-image {
   background: linear-gradient(145deg, #1f4f7c, #2f6f9f);
 }
 
-.xhs-card:nth-child(4n + 3) .xhs-cover {
+.xhs-card:nth-child(4n + 3) .xhs-cover.no-image {
   background: linear-gradient(145deg, #dd6a2f, #ee945f);
 }
 
-.xhs-card:nth-child(4n + 4) .xhs-cover {
+.xhs-card:nth-child(4n + 4) .xhs-cover.no-image {
   background: linear-gradient(145deg, #2f6b49, #4b9470);
+}
+
+.xhs-cover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.xhs-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 32, 50, 0.18), rgba(17, 32, 50, 0.52));
+}
+
+.xhs-cover-content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .xhs-badge {

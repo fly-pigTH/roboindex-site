@@ -3,7 +3,7 @@ const siteContent = {
     brand: "RoboIndex",
     navProposal: "Proposal",
     navFeatures: "核心功能",
-    navRepos: "开源项目",
+    navRepos: "开源论文",
     navGuide: "投稿经验",
     navRoadmap: "路线图",
     navKpis: "KPI",
@@ -118,38 +118,66 @@ const siteContent = {
         text: "坚持经验分享定位，不触及利益交换与付费投稿辅导。"
       }
     ],
-    reposKicker: "Open Source Showcase",
-    reposTitle: "开源项目展示（示例卡片）",
+    reposKicker: "Open Source Papers",
+    reposTitle: "开源 Paper 展示（ICRA / IROS / RA-L）",
     reposIntro:
-      "先做一个小红书风格的展示样式，卡片可直接跳转到项目文档或仓库，后续可替换为真实社区投稿内容。",
+      "改为开源论文流展示，卡片可直接跳转到项目仓库或论文入口。已填充 ICRA、IROS、RA-L 示例，并加入 EquiMus。",
     repoCards: [
       {
-        badge: "ROS",
-        title: "ROS 2 Documentation",
-        subtitle: "官方文档入口（Rolling）",
-        tags: ["#RobotMiddleware", "#Docs", "#GettingStarted"],
-        link: "https://docs.ros.org/en/rolling/"
+        badge: "RA-L 2025",
+        title:
+          "EquiMus: Energy-Equivalent Dynamic Modeling and Simulation of Musculoskeletal Robots",
+        subtitle: "你的项目示例：肌骨机器人能量等效建模与仿真",
+        tags: ["#EquiMus", "#Musculoskeletal", "#RA-L"],
+        link: "https://www.catalyzex.com/paper/equimus-energy-equivalent-dynamic-modeling"
       },
       {
-        badge: "ROS",
-        title: "ROS 2 GitHub",
-        subtitle: "核心组织与仓库集合",
-        tags: ["#OpenSource", "#Codebase", "#Ecosystem"],
-        link: "https://github.com/ros2"
+        badge: "ICRA 2024",
+        title: "FC-Planner",
+        subtitle: "复杂 3D 场景快速空中覆盖（Best UAV Finalist）",
+        tags: ["#CoveragePlanning", "#UAV", "#OpenSource"],
+        link: "https://github.com/HKUST-Aerial-Robotics/FC-Planner",
+        image: "https://github.com/HKUST-Aerial-Robotics/FC-Planner/raw/master/misc/top_2024.png"
       },
       {
-        badge: "Linux",
-        title: "Linux Kernel Repository",
-        subtitle: "Torvalds 主仓库",
-        tags: ["#Kernel", "#SourceCode", "#Systems"],
-        link: "https://github.com/torvalds/linux"
+        badge: "IROS 2024",
+        title: "OmniNxt",
+        subtitle: "全向视觉感知的开源紧凑型空中机器人",
+        tags: ["#AerialRobot", "#OmniVision", "#OpenSource"],
+        link: "https://github.com/HKUST-Aerial-Robotics/OmniNxt",
+        image: "https://github.com/HKUST-Aerial-Robotics/OmniNxt/raw/main/misc/system_overview.png"
       },
       {
-        badge: "Linux",
-        title: "Kernel Official Docs",
-        subtitle: "Linux 内核官方文档",
-        tags: ["#Documentation", "#KernelDev", "#Architecture"],
-        link: "https://www.kernel.org/doc/html/latest/"
+        badge: "IROS 2024",
+        title: "SOAR",
+        subtitle: "异构多无人机同步探索与摄影重建",
+        tags: ["#MultiUAV", "#Reconstruction", "#Planner"],
+        link: "https://github.com/Robotics-STAR-Lab/SOAR",
+        image: "https://github.com/Robotics-STAR-Lab/SOAR/raw/main/assets/videos/overview.gif"
+      },
+      {
+        badge: "IROS 2024",
+        title: "RISE",
+        subtitle: "3D 感知驱动的真实机器人模仿学习",
+        tags: ["#ImitationLearning", "#3DPerception", "#Policy"],
+        link: "https://github.com/rise-policy/RISE",
+        image: "https://github.com/rise-policy/RISE/raw/main/assets/images/teaser.jpg"
+      },
+      {
+        badge: "RA-L 2024",
+        title: "STAR-Searcher",
+        subtitle: "复杂未知环境中的高效自主目标搜索系统",
+        tags: ["#TargetSearch", "#UAV", "#RA-L"],
+        link: "https://github.com/Robotics-STAR-Lab/STAR-Searcher",
+        image: "https://github.com/Robotics-STAR-Lab/STAR-Searcher/raw/main/img/Intro.jpg"
+      },
+      {
+        badge: "RA-L 2025",
+        title: "Learning Humanoid Arm Motion",
+        subtitle: "多智能体强化学习的人形臂运动学习",
+        tags: ["#Humanoid", "#ReinforcementLearning", "#OpenSource"],
+        link: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code",
+        image: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code/raw/main/media/walking.gif"
       }
     ],
     guideKicker: "RA-L Knowledge",
@@ -226,7 +254,7 @@ const siteContent = {
     brand: "RoboIndex",
     navProposal: "Proposal",
     navFeatures: "Features",
-    navRepos: "Open Source",
+    navRepos: "Open Papers",
     navGuide: "RA-L Guide",
     navRoadmap: "Roadmap",
     navKpis: "KPIs",
@@ -341,38 +369,66 @@ const siteContent = {
         text: "Focus on shared experience, not paid submission consulting."
       }
     ],
-    reposKicker: "Open Source Showcase",
-    reposTitle: "Open-Source Project Cards (Mock Style)",
+    reposKicker: "Open Source Papers",
+    reposTitle: "Open Paper Cards (ICRA / IROS / RA-L)",
     reposIntro:
-      "A Xiaohongshu-inspired card layout for quick discovery. Each card links to project docs or repositories and serves as a starter template.",
+      "The showcase now focuses on open-source papers. Cards link directly to repositories or paper pages, including ICRA, IROS, RA-L, and your EquiMus example.",
     repoCards: [
       {
-        badge: "ROS",
-        title: "ROS 2 Documentation",
-        subtitle: "Official docs entry (Rolling)",
-        tags: ["#RobotMiddleware", "#Docs", "#GettingStarted"],
-        link: "https://docs.ros.org/en/rolling/"
+        badge: "RA-L 2025",
+        title:
+          "EquiMus: Energy-Equivalent Dynamic Modeling and Simulation of Musculoskeletal Robots",
+        subtitle: "Your project spotlight in this paper feed",
+        tags: ["#EquiMus", "#Musculoskeletal", "#RA-L"],
+        link: "https://www.catalyzex.com/paper/equimus-energy-equivalent-dynamic-modeling"
       },
       {
-        badge: "ROS",
-        title: "ROS 2 GitHub",
-        subtitle: "Core organization and repositories",
-        tags: ["#OpenSource", "#Codebase", "#Ecosystem"],
-        link: "https://github.com/ros2"
+        badge: "ICRA 2024",
+        title: "FC-Planner",
+        subtitle: "Fast aerial coverage in complex 3D environments",
+        tags: ["#CoveragePlanning", "#UAV", "#OpenSource"],
+        link: "https://github.com/HKUST-Aerial-Robotics/FC-Planner",
+        image: "https://github.com/HKUST-Aerial-Robotics/FC-Planner/raw/master/misc/top_2024.png"
       },
       {
-        badge: "Linux",
-        title: "Linux Kernel Repository",
-        subtitle: "Main repository by Torvalds",
-        tags: ["#Kernel", "#SourceCode", "#Systems"],
-        link: "https://github.com/torvalds/linux"
+        badge: "IROS 2024",
+        title: "OmniNxt",
+        subtitle: "Open-source compact aerial robot with omni-vision",
+        tags: ["#AerialRobot", "#OmniVision", "#OpenSource"],
+        link: "https://github.com/HKUST-Aerial-Robotics/OmniNxt",
+        image: "https://github.com/HKUST-Aerial-Robotics/OmniNxt/raw/main/misc/system_overview.png"
       },
       {
-        badge: "Linux",
-        title: "Kernel Official Docs",
-        subtitle: "Official Linux kernel documentation",
-        tags: ["#Documentation", "#KernelDev", "#Architecture"],
-        link: "https://www.kernel.org/doc/html/latest/"
+        badge: "IROS 2024",
+        title: "SOAR",
+        subtitle: "Synchronous exploration and reconstruction with heterogeneous UAVs",
+        tags: ["#MultiUAV", "#Reconstruction", "#Planner"],
+        link: "https://github.com/Robotics-STAR-Lab/SOAR",
+        image: "https://github.com/Robotics-STAR-Lab/SOAR/raw/main/assets/videos/overview.gif"
+      },
+      {
+        badge: "IROS 2024",
+        title: "RISE",
+        subtitle: "3D perception policy for real-world robot imitation learning",
+        tags: ["#ImitationLearning", "#3DPerception", "#Policy"],
+        link: "https://github.com/rise-policy/RISE",
+        image: "https://github.com/rise-policy/RISE/raw/main/assets/images/teaser.jpg"
+      },
+      {
+        badge: "RA-L 2024",
+        title: "STAR-Searcher",
+        subtitle: "Autonomous target search in complex unknown environments",
+        tags: ["#TargetSearch", "#UAV", "#RA-L"],
+        link: "https://github.com/Robotics-STAR-Lab/STAR-Searcher",
+        image: "https://github.com/Robotics-STAR-Lab/STAR-Searcher/raw/main/img/Intro.jpg"
+      },
+      {
+        badge: "RA-L 2025",
+        title: "Learning Humanoid Arm Motion",
+        subtitle: "Multi-agent RL for humanoid arm control",
+        tags: ["#Humanoid", "#ReinforcementLearning", "#OpenSource"],
+        link: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code",
+        image: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code/raw/main/media/walking.gif"
       }
     ],
     guideKicker: "RA-L Knowledge",
@@ -476,15 +532,35 @@ function createRepoCard(item) {
   const cover = document.createElement("div");
   cover.className = "xhs-cover";
 
+  if (item.image) {
+    const img = document.createElement("img");
+    img.className = "xhs-cover-img";
+    img.src = item.image;
+    img.alt = `${item.title} preview`;
+    img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
+    img.addEventListener("error", () => {
+      img.remove();
+      cover.classList.add("no-image");
+    });
+    cover.appendChild(img);
+  } else {
+    cover.classList.add("no-image");
+  }
+
+  const coverContent = document.createElement("div");
+  coverContent.className = "xhs-cover-content";
+
   const badge = document.createElement("span");
   badge.className = "xhs-badge";
   badge.textContent = item.badge;
 
   const arrow = document.createElement("span");
   arrow.className = "xhs-arrow";
-  arrow.textContent = "OPEN";
+  arrow.textContent = "PAPER";
 
-  cover.append(badge, arrow);
+  coverContent.append(badge, arrow);
+  cover.appendChild(coverContent);
 
   const body = document.createElement("div");
   body.className = "xhs-body";
