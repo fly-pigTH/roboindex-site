@@ -29,17 +29,11 @@ RoboIndex 的项目启动展示页（单页中英双语），用于对外说明�
 
 ## GitHub Backup & Pages (roboindex-site)
 
-1. 在 GitHub 新建公开仓库：`roboindex-site`
-2. 本地执行：
-   - `git init`
-   - `git add .`
-   - `git commit -m "feat: launch RoboIndex startup page"`
-   - `git branch -M main`
-   - `git remote add origin git@github.com:<your-username>/roboindex-site.git`
-   - `git push -u origin main`
-3. 开启 Pages：
-   - `Settings -> Pages`
-   - Source 选择 `Deploy from a branch`
-   - Branch 选择 `main` + `/root`
-4. 发布地址：
-   - `https://<your-username>.github.io/roboindex-site/`
+- 仓库地址：`https://github.com/fly-pigTH/roboindex-site`
+- Pages 地址：`https://fly-pigth.github.io/roboindex-site/`
+
+当前项目已完成：
+
+1. 本地初始化与首次提交
+2. 推送 `main` 分支到 GitHub 公开仓库
+3. 启用 GitHub Pages（`main` + `/root`）
