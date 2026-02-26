@@ -3,6 +3,7 @@ const siteContent = {
     brand: "RoboIndex",
     navProposal: "Proposal",
     navFeatures: "核心功能",
+    navRepos: "开源项目",
     navGuide: "投稿经验",
     navRoadmap: "路线图",
     navKpis: "KPI",
@@ -117,6 +118,40 @@ const siteContent = {
         text: "坚持经验分享定位，不触及利益交换与付费投稿辅导。"
       }
     ],
+    reposKicker: "Open Source Showcase",
+    reposTitle: "开源项目展示（示例卡片）",
+    reposIntro:
+      "先做一个小红书风格的展示样式，卡片可直接跳转到项目文档或仓库，后续可替换为真实社区投稿内容。",
+    repoCards: [
+      {
+        badge: "ROS",
+        title: "ROS 2 Documentation",
+        subtitle: "官方文档入口（Rolling）",
+        tags: ["#RobotMiddleware", "#Docs", "#GettingStarted"],
+        link: "https://docs.ros.org/en/rolling/"
+      },
+      {
+        badge: "ROS",
+        title: "ROS 2 GitHub",
+        subtitle: "核心组织与仓库集合",
+        tags: ["#OpenSource", "#Codebase", "#Ecosystem"],
+        link: "https://github.com/ros2"
+      },
+      {
+        badge: "Linux",
+        title: "Linux Kernel Repository",
+        subtitle: "Torvalds 主仓库",
+        tags: ["#Kernel", "#SourceCode", "#Systems"],
+        link: "https://github.com/torvalds/linux"
+      },
+      {
+        badge: "Linux",
+        title: "Kernel Official Docs",
+        subtitle: "Linux 内核官方文档",
+        tags: ["#Documentation", "#KernelDev", "#Architecture"],
+        link: "https://www.kernel.org/doc/html/latest/"
+      }
+    ],
     guideKicker: "RA-L Knowledge",
     guideTitle: "RA-L 投稿经验摘要（展示版）",
     guideIntro:
@@ -191,6 +226,7 @@ const siteContent = {
     brand: "RoboIndex",
     navProposal: "Proposal",
     navFeatures: "Features",
+    navRepos: "Open Source",
     navGuide: "RA-L Guide",
     navRoadmap: "Roadmap",
     navKpis: "KPIs",
@@ -305,6 +341,40 @@ const siteContent = {
         text: "Focus on shared experience, not paid submission consulting."
       }
     ],
+    reposKicker: "Open Source Showcase",
+    reposTitle: "Open-Source Project Cards (Mock Style)",
+    reposIntro:
+      "A Xiaohongshu-inspired card layout for quick discovery. Each card links to project docs or repositories and serves as a starter template.",
+    repoCards: [
+      {
+        badge: "ROS",
+        title: "ROS 2 Documentation",
+        subtitle: "Official docs entry (Rolling)",
+        tags: ["#RobotMiddleware", "#Docs", "#GettingStarted"],
+        link: "https://docs.ros.org/en/rolling/"
+      },
+      {
+        badge: "ROS",
+        title: "ROS 2 GitHub",
+        subtitle: "Core organization and repositories",
+        tags: ["#OpenSource", "#Codebase", "#Ecosystem"],
+        link: "https://github.com/ros2"
+      },
+      {
+        badge: "Linux",
+        title: "Linux Kernel Repository",
+        subtitle: "Main repository by Torvalds",
+        tags: ["#Kernel", "#SourceCode", "#Systems"],
+        link: "https://github.com/torvalds/linux"
+      },
+      {
+        badge: "Linux",
+        title: "Kernel Official Docs",
+        subtitle: "Official Linux kernel documentation",
+        tags: ["#Documentation", "#KernelDev", "#Architecture"],
+        link: "https://www.kernel.org/doc/html/latest/"
+      }
+    ],
     guideKicker: "RA-L Knowledge",
     guideTitle: "RA-L Submission Guide Summary (Display Version)",
     guideIntro:
@@ -396,6 +466,51 @@ function createCard(item) {
   return card;
 }
 
+function createRepoCard(item) {
+  const card = document.createElement("a");
+  card.className = "xhs-card";
+  card.href = item.link;
+  card.target = "_blank";
+  card.rel = "noreferrer";
+
+  const cover = document.createElement("div");
+  cover.className = "xhs-cover";
+
+  const badge = document.createElement("span");
+  badge.className = "xhs-badge";
+  badge.textContent = item.badge;
+
+  const arrow = document.createElement("span");
+  arrow.className = "xhs-arrow";
+  arrow.textContent = "OPEN";
+
+  cover.append(badge, arrow);
+
+  const body = document.createElement("div");
+  body.className = "xhs-body";
+
+  const title = document.createElement("h3");
+  title.className = "xhs-title";
+  title.textContent = item.title;
+
+  const subtitle = document.createElement("p");
+  subtitle.className = "xhs-subtitle";
+  subtitle.textContent = item.subtitle;
+
+  const tags = document.createElement("div");
+  tags.className = "xhs-tags";
+  item.tags.forEach((tag) => {
+    const token = document.createElement("span");
+    token.className = "xhs-tag";
+    token.textContent = tag;
+    tags.appendChild(token);
+  });
+
+  body.append(title, subtitle, tags);
+  card.append(cover, body);
+  return card;
+}
+
 function renderLanguage(lang) {
   const content = siteContent[lang] || siteContent.zh;
   document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
@@ -446,6 +561,10 @@ function renderLanguage(lang) {
   const featureGrid = document.getElementById("feature-grid");
   featureGrid.innerHTML = "";
   content.featureCards.forEach((item) => featureGrid.appendChild(createCard(item)));
+
+  const repoGrid = document.getElementById("repo-grid");
+  repoGrid.innerHTML = "";
+  content.repoCards.forEach((item) => repoGrid.appendChild(createRepoCard(item)));
 
   const guideGrid = document.getElementById("guide-grid");
   guideGrid.innerHTML = "";
