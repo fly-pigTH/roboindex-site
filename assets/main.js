@@ -137,7 +137,8 @@ const siteContent = {
         subtitle: "郝策老师论文：Generalizable Articulation Modeling and Manipulation",
         tags: ["#CeHao", "#ICRA", "#Articulation"],
         link: "https://sites.google.com/view/gamma-articulation",
-        image: "assets/paper-previews/gamma.svg"
+        image: "assets/paper-previews/gamma.png",
+        video: "assets/paper-previews/gamma.mp4"
       },
       {
         badge: "RA-L 2024 · IROS 2024",
@@ -145,7 +146,8 @@ const siteContent = {
         subtitle: "郝策老师论文：Refining Learned Skills for Hierarchical RL",
         tags: ["#CeHao", "#IROS", "#RA-L"],
         link: "https://sites.google.com/view/skill-critic",
-        image: "assets/paper-previews/skill-critic.svg"
+        image: "assets/paper-previews/skill-critic.png",
+        video: "assets/paper-previews/skill-critic.mp4"
       },
       {
         badge: "RA-L 2025 · ICRA 2026",
@@ -153,7 +155,8 @@ const siteContent = {
         subtitle: "郝策老师论文：Reflexive Evasion Robot",
         tags: ["#CeHao", "#RA-L", "#Quadruped"],
         link: "https://rebot-2025.github.io/",
-        image: "assets/paper-previews/rebot.svg"
+        image: "assets/paper-previews/rebot.png",
+        video: "assets/paper-previews/rebot.mp4"
       },
       {
         badge: "IROS 2024",
@@ -161,7 +164,7 @@ const siteContent = {
         subtitle: "3D 感知驱动的真实机器人模仿学习",
         tags: ["#ImitationLearning", "#3DPerception", "#Policy"],
         link: "https://github.com/rise-policy/RISE",
-        image: "assets/paper-previews/rise.svg"
+        image: "assets/paper-previews/rise.png"
       },
       {
         badge: "RA-L 2024",
@@ -169,7 +172,7 @@ const siteContent = {
         subtitle: "复杂未知环境中的高效自主目标搜索系统",
         tags: ["#TargetSearch", "#UAV", "#RA-L"],
         link: "https://github.com/Robotics-STAR-Lab/STAR-Searcher",
-        image: "assets/paper-previews/star-searcher.svg"
+        image: "assets/paper-previews/star-searcher.png"
       },
       {
         badge: "RA-L 2025",
@@ -177,7 +180,7 @@ const siteContent = {
         subtitle: "多智能体强化学习的人形臂运动学习",
         tags: ["#Humanoid", "#ReinforcementLearning", "#OpenSource"],
         link: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code",
-        image: "assets/paper-previews/humanoid-arm.svg"
+        image: "assets/paper-previews/humanoid-arm.png"
       }
     ],
     guideKicker: "RA-L Knowledge",
@@ -388,7 +391,8 @@ const siteContent = {
         subtitle: "Generalizable Articulation Modeling and Manipulation (Hao Ce)",
         tags: ["#CeHao", "#ICRA", "#Articulation"],
         link: "https://sites.google.com/view/gamma-articulation",
-        image: "assets/paper-previews/gamma.svg"
+        image: "assets/paper-previews/gamma.png",
+        video: "assets/paper-previews/gamma.mp4"
       },
       {
         badge: "RA-L 2024 · IROS 2024",
@@ -396,7 +400,8 @@ const siteContent = {
         subtitle: "Refining Learned Skills for Hierarchical Reinforcement Learning (Hao Ce)",
         tags: ["#CeHao", "#IROS", "#RA-L"],
         link: "https://sites.google.com/view/skill-critic",
-        image: "assets/paper-previews/skill-critic.svg"
+        image: "assets/paper-previews/skill-critic.png",
+        video: "assets/paper-previews/skill-critic.mp4"
       },
       {
         badge: "RA-L 2025 · ICRA 2026",
@@ -404,7 +409,8 @@ const siteContent = {
         subtitle: "Reflexive Evasion Robot (Hao Ce)",
         tags: ["#CeHao", "#RA-L", "#Quadruped"],
         link: "https://rebot-2025.github.io/",
-        image: "assets/paper-previews/rebot.svg"
+        image: "assets/paper-previews/rebot.png",
+        video: "assets/paper-previews/rebot.mp4"
       },
       {
         badge: "IROS 2024",
@@ -412,7 +418,7 @@ const siteContent = {
         subtitle: "3D perception policy for real-world robot imitation learning",
         tags: ["#ImitationLearning", "#3DPerception", "#Policy"],
         link: "https://github.com/rise-policy/RISE",
-        image: "assets/paper-previews/rise.svg"
+        image: "assets/paper-previews/rise.png"
       },
       {
         badge: "RA-L 2024",
@@ -420,7 +426,7 @@ const siteContent = {
         subtitle: "Autonomous target search in complex unknown environments",
         tags: ["#TargetSearch", "#UAV", "#RA-L"],
         link: "https://github.com/Robotics-STAR-Lab/STAR-Searcher",
-        image: "assets/paper-previews/star-searcher.svg"
+        image: "assets/paper-previews/star-searcher.png"
       },
       {
         badge: "RA-L 2025",
@@ -428,7 +434,7 @@ const siteContent = {
         subtitle: "Multi-agent RL for humanoid arm control",
         tags: ["#Humanoid", "#ReinforcementLearning", "#OpenSource"],
         link: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code",
-        image: "assets/paper-previews/humanoid-arm.svg"
+        image: "assets/paper-previews/humanoid-arm.png"
       }
     ],
     guideKicker: "RA-L Knowledge",
@@ -531,8 +537,12 @@ function createRepoCard(item) {
 
   const cover = document.createElement("div");
   cover.className = "xhs-cover";
+  let hasVisual = false;
 
-  if (item.image) {
+  const attachImage = () => {
+    if (!item.image) {
+      return false;
+    }
     const img = document.createElement("img");
     img.className = "xhs-cover-img";
     img.src = item.image;
@@ -541,10 +551,41 @@ function createRepoCard(item) {
     img.referrerPolicy = "no-referrer";
     img.addEventListener("error", () => {
       img.remove();
-      cover.classList.add("no-image");
+      if (!cover.querySelector(".xhs-cover-video")) {
+        cover.classList.add("no-image");
+      }
     });
     cover.appendChild(img);
-  } else {
+    return true;
+  };
+
+  if (item.video) {
+    const video = document.createElement("video");
+    video.className = "xhs-cover-video";
+    video.src = item.video;
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    if (item.image) {
+      video.poster = item.image;
+    }
+    video.addEventListener("error", () => {
+      video.remove();
+      const imageAttached = attachImage();
+      if (!imageAttached) {
+        cover.classList.add("no-image");
+      }
+    });
+    cover.appendChild(video);
+    hasVisual = true;
+  }
+
+  if (!hasVisual) {
+    hasVisual = attachImage();
+  }
+  if (!hasVisual) {
     cover.classList.add("no-image");
   }
 
@@ -557,7 +598,7 @@ function createRepoCard(item) {
 
   const arrow = document.createElement("span");
   arrow.className = "xhs-arrow";
-  arrow.textContent = "PAPER";
+  arrow.textContent = item.video ? "VIDEO" : "PAPER";
 
   coverContent.append(badge, arrow);
   cover.appendChild(coverContent);
