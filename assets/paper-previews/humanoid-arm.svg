@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Humanoid Arm paper preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b2cbf"/>
+      <stop offset="100%" stop-color="#c77dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g fill="#ffffff" font-family="Helvetica, Arial, sans-serif">
+    <text x="72" y="120" font-size="48" font-weight="700">RA-L 2025</text>
+    <text x="72" y="220" font-size="68" font-weight="700">Learning Humanoid Arm Motion</text>
+    <text x="72" y="308" font-size="40">Multi-agent RL for control</text>
+  </g>
+</svg>

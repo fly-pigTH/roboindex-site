@@ -129,7 +129,7 @@ const siteContent = {
         subtitle: "官方仓库：Musculoskeletal Robot 能量等效建模与仿真",
         tags: ["#EquiMus", "#Musculoskeletal", "#RA-L"],
         link: "https://github.com/fly-pigTH/EquiMus",
-        image: "https://opengraph.githubassets.com/1/fly-pigTH/EquiMus"
+        image: "assets/paper-previews/equimus.png"
       },
       {
         badge: "ICRA 2024",
@@ -137,7 +137,7 @@ const siteContent = {
         subtitle: "郝策老师论文：Generalizable Articulation Modeling and Manipulation",
         tags: ["#CeHao", "#ICRA", "#Articulation"],
         link: "https://sites.google.com/view/gamma-articulation",
-        image: "https://lh3.googleusercontent.com/sitesv/APaQ0SRRHXpVGBRtkiZeH-N2s1YzOaLOR_SvvlsTpesIPs_3302K0kY-2rLC_U4l2YsTTMZ6Kuep_LP7Geb8caYuj9rsPPIv3-a7NerIK3wgx8wBvVXSNYfjg54YojrsUU4XVHSsMp_oDubDL2DinBxRckHVu-S5_B-6fS2GsgkX7rqhU8c1-2MTSq5oQe_3jY4HbbUJPzL67TG8Qqtd_AnxkvtcCacQvIygut2Xw_8%3Dw1280"
+        image: "assets/paper-previews/gamma.svg"
       },
       {
         badge: "RA-L 2024 · IROS 2024",
@@ -145,7 +145,7 @@ const siteContent = {
         subtitle: "郝策老师论文：Refining Learned Skills for Hierarchical RL",
         tags: ["#CeHao", "#IROS", "#RA-L"],
         link: "https://sites.google.com/view/skill-critic",
-        image: "https://lh3.googleusercontent.com/sitesv/APaQ0STPzwDOVVpO-BGGagg5S6uR-ox4gY8SL9cVUlEof982wlFapg9ljGyvhlgk9OWLU84uiTALILRBqHHOI6SJ6bH8l6dgiXIWcbuJ84LzHlO1GgT5XAB_9BOF6dhPTMYPPoQjUeQckpUa6xVbWHgfJc2N51zW45GHIIyrkcK3XapKamxtWP38pLxCb6FhFGungddqb77Gkq7EGQm-DTrq2aAqFYz2ZSE3Xxc2%3Dw1280"
+        image: "assets/paper-previews/skill-critic.svg"
       },
       {
         badge: "RA-L 2025 · ICRA 2026",
@@ -153,7 +153,7 @@ const siteContent = {
         subtitle: "郝策老师论文：Reflexive Evasion Robot",
         tags: ["#CeHao", "#RA-L", "#Quadruped"],
         link: "https://rebot-2025.github.io/",
-        image: "https://rebot-2025.github.io/figure/framework.png"
+        image: "assets/paper-previews/rebot.svg"
       },
       {
         badge: "IROS 2024",
@@ -161,7 +161,7 @@ const siteContent = {
         subtitle: "3D 感知驱动的真实机器人模仿学习",
         tags: ["#ImitationLearning", "#3DPerception", "#Policy"],
         link: "https://github.com/rise-policy/RISE",
-        image: "https://github.com/rise-policy/RISE/raw/main/assets/images/teaser.jpg"
+        image: "assets/paper-previews/rise.svg"
       },
       {
         badge: "RA-L 2024",
@@ -169,7 +169,7 @@ const siteContent = {
         subtitle: "复杂未知环境中的高效自主目标搜索系统",
         tags: ["#TargetSearch", "#UAV", "#RA-L"],
         link: "https://github.com/Robotics-STAR-Lab/STAR-Searcher",
-        image: "https://github.com/Robotics-STAR-Lab/STAR-Searcher/raw/main/img/Intro.jpg"
+        image: "assets/paper-previews/star-searcher.svg"
       },
       {
         badge: "RA-L 2025",
@@ -177,7 +177,7 @@ const siteContent = {
         subtitle: "多智能体强化学习的人形臂运动学习",
         tags: ["#Humanoid", "#ReinforcementLearning", "#OpenSource"],
         link: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code",
-        image: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code/raw/main/media/walking.gif"
+        image: "assets/paper-previews/humanoid-arm.svg"
       }
     ],
     guideKicker: "RA-L Knowledge",
@@ -380,7 +380,7 @@ const siteContent = {
         subtitle: "Official repository for musculoskeletal robot modeling and simulation",
         tags: ["#EquiMus", "#Musculoskeletal", "#RA-L"],
         link: "https://github.com/fly-pigTH/EquiMus",
-        image: "https://opengraph.githubassets.com/1/fly-pigTH/EquiMus"
+        image: "assets/paper-previews/equimus.png"
       },
       {
         badge: "ICRA 2024",
@@ -388,7 +388,7 @@ const siteContent = {
         subtitle: "Generalizable Articulation Modeling and Manipulation (Hao Ce)",
         tags: ["#CeHao", "#ICRA", "#Articulation"],
         link: "https://sites.google.com/view/gamma-articulation",
-        image: "https://lh3.googleusercontent.com/sitesv/APaQ0SRRHXpVGBRtkiZeH-N2s1YzOaLOR_SvvlsTpesIPs_3302K0kY-2rLC_U4l2YsTTMZ6Kuep_LP7Geb8caYuj9rsPPIv3-a7NerIK3wgx8wBvVXSNYfjg54YojrsUU4XVHSsMp_oDubDL2DinBxRckHVu-S5_B-6fS2GsgkX7rqhU8c1-2MTSq5oQe_3jY4HbbUJPzL67TG8Qqtd_AnxkvtcCacQvIygut2Xw_8%3Dw1280"
+        image: "assets/paper-previews/gamma.svg"
       },
       {
         badge: "RA-L 2024 · IROS 2024",
@@ -396,7 +396,7 @@ const siteContent = {
         subtitle: "Refining Learned Skills for Hierarchical Reinforcement Learning (Hao Ce)",
         tags: ["#CeHao", "#IROS", "#RA-L"],
         link: "https://sites.google.com/view/skill-critic",
-        image: "https://lh3.googleusercontent.com/sitesv/APaQ0STPzwDOVVpO-BGGagg5S6uR-ox4gY8SL9cVUlEof982wlFapg9ljGyvhlgk9OWLU84uiTALILRBqHHOI6SJ6bH8l6dgiXIWcbuJ84LzHlO1GgT5XAB_9BOF6dhPTMYPPoQjUeQckpUa6xVbWHgfJc2N51zW45GHIIyrkcK3XapKamxtWP38pLxCb6FhFGungddqb77Gkq7EGQm-DTrq2aAqFYz2ZSE3Xxc2%3Dw1280"
+        image: "assets/paper-previews/skill-critic.svg"
       },
       {
         badge: "RA-L 2025 · ICRA 2026",
@@ -404,7 +404,7 @@ const siteContent = {
         subtitle: "Reflexive Evasion Robot (Hao Ce)",
         tags: ["#CeHao", "#RA-L", "#Quadruped"],
         link: "https://rebot-2025.github.io/",
-        image: "https://rebot-2025.github.io/figure/framework.png"
+        image: "assets/paper-previews/rebot.svg"
       },
       {
         badge: "IROS 2024",
@@ -412,7 +412,7 @@ const siteContent = {
         subtitle: "3D perception policy for real-world robot imitation learning",
         tags: ["#ImitationLearning", "#3DPerception", "#Policy"],
         link: "https://github.com/rise-policy/RISE",
-        image: "https://github.com/rise-policy/RISE/raw/main/assets/images/teaser.jpg"
+        image: "assets/paper-previews/rise.svg"
       },
       {
         badge: "RA-L 2024",
@@ -420,7 +420,7 @@ const siteContent = {
         subtitle: "Autonomous target search in complex unknown environments",
         tags: ["#TargetSearch", "#UAV", "#RA-L"],
         link: "https://github.com/Robotics-STAR-Lab/STAR-Searcher",
-        image: "https://github.com/Robotics-STAR-Lab/STAR-Searcher/raw/main/img/Intro.jpg"
+        image: "assets/paper-previews/star-searcher.svg"
       },
       {
         badge: "RA-L 2025",
@@ -428,7 +428,7 @@ const siteContent = {
         subtitle: "Multi-agent RL for humanoid arm control",
         tags: ["#Humanoid", "#ReinforcementLearning", "#OpenSource"],
         link: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code",
-        image: "https://github.com/hojae-io/LearningHumanoidArmMotion-RAL2025-Code/raw/main/media/walking.gif"
+        image: "assets/paper-previews/humanoid-arm.svg"
       }
     ],
     guideKicker: "RA-L Knowledge",

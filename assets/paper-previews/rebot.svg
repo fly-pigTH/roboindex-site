@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="REBot paper preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b6e4f"/>
+      <stop offset="100%" stop-color="#2fbf71"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g fill="#ffffff" font-family="Helvetica, Arial, sans-serif">
+    <text x="72" y="120" font-size="48" font-weight="700">RA-L 2025 · ICRA 2026</text>
+    <text x="72" y="220" font-size="92" font-weight="700">REBot</text>
+    <text x="72" y="308" font-size="40">Reflexive Evasion Robot</text>
+    <text x="72" y="360" font-size="40">for agile locomotion</text>
+    <text x="72" y="806" font-size="34" opacity="0.9">from cehao1.github.io</text>
+  </g>
+</svg>
