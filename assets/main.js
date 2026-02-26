@@ -121,39 +121,39 @@ const siteContent = {
     reposKicker: "Open Source Papers",
     reposTitle: "开源 Paper 展示（ICRA / IROS / RA-L）",
     reposIntro:
-      "改为开源论文流展示，卡片可直接跳转到项目仓库或论文入口。已填充 ICRA、IROS、RA-L 示例，并加入 EquiMus。",
+      "卡片流已加入 EquiMus 官方仓库，以及郝策老师主页中的代表性论文（ICRA / IROS / RA-L），并提供预览图。",
     repoCards: [
       {
         badge: "RA-L 2025",
-        title:
-          "EquiMus: Energy-Equivalent Dynamic Modeling and Simulation of Musculoskeletal Robots",
-        subtitle: "你的项目示例：肌骨机器人能量等效建模与仿真",
+        title: "EquiMus",
+        subtitle: "官方仓库：Musculoskeletal Robot 能量等效建模与仿真",
         tags: ["#EquiMus", "#Musculoskeletal", "#RA-L"],
-        link: "https://www.catalyzex.com/paper/equimus-energy-equivalent-dynamic-modeling"
+        link: "https://github.com/fly-pigTH/EquiMus",
+        image: "https://opengraph.githubassets.com/1/fly-pigTH/EquiMus"
       },
       {
         badge: "ICRA 2024",
-        title: "FC-Planner",
-        subtitle: "复杂 3D 场景快速空中覆盖（Best UAV Finalist）",
-        tags: ["#CoveragePlanning", "#UAV", "#OpenSource"],
-        link: "https://github.com/HKUST-Aerial-Robotics/FC-Planner",
-        image: "https://github.com/HKUST-Aerial-Robotics/FC-Planner/raw/master/misc/top_2024.png"
+        title: "GAMMA",
+        subtitle: "郝策老师论文：Generalizable Articulation Modeling and Manipulation",
+        tags: ["#CeHao", "#ICRA", "#Articulation"],
+        link: "https://sites.google.com/view/gamma-articulation",
+        image: "https://lh3.googleusercontent.com/sitesv/APaQ0SRRHXpVGBRtkiZeH-N2s1YzOaLOR_SvvlsTpesIPs_3302K0kY-2rLC_U4l2YsTTMZ6Kuep_LP7Geb8caYuj9rsPPIv3-a7NerIK3wgx8wBvVXSNYfjg54YojrsUU4XVHSsMp_oDubDL2DinBxRckHVu-S5_B-6fS2GsgkX7rqhU8c1-2MTSq5oQe_3jY4HbbUJPzL67TG8Qqtd_AnxkvtcCacQvIygut2Xw_8%3Dw1280"
       },
       {
-        badge: "IROS 2024",
-        title: "OmniNxt",
-        subtitle: "全向视觉感知的开源紧凑型空中机器人",
-        tags: ["#AerialRobot", "#OmniVision", "#OpenSource"],
-        link: "https://github.com/HKUST-Aerial-Robotics/OmniNxt",
-        image: "https://github.com/HKUST-Aerial-Robotics/OmniNxt/raw/main/misc/system_overview.png"
+        badge: "RA-L 2024 · IROS 2024",
+        title: "Skill-Critic",
+        subtitle: "郝策老师论文：Refining Learned Skills for Hierarchical RL",
+        tags: ["#CeHao", "#IROS", "#RA-L"],
+        link: "https://sites.google.com/view/skill-critic",
+        image: "https://lh3.googleusercontent.com/sitesv/APaQ0STPzwDOVVpO-BGGagg5S6uR-ox4gY8SL9cVUlEof982wlFapg9ljGyvhlgk9OWLU84uiTALILRBqHHOI6SJ6bH8l6dgiXIWcbuJ84LzHlO1GgT5XAB_9BOF6dhPTMYPPoQjUeQckpUa6xVbWHgfJc2N51zW45GHIIyrkcK3XapKamxtWP38pLxCb6FhFGungddqb77Gkq7EGQm-DTrq2aAqFYz2ZSE3Xxc2%3Dw1280"
       },
       {
-        badge: "IROS 2024",
-        title: "SOAR",
-        subtitle: "异构多无人机同步探索与摄影重建",
-        tags: ["#MultiUAV", "#Reconstruction", "#Planner"],
-        link: "https://github.com/Robotics-STAR-Lab/SOAR",
-        image: "https://github.com/Robotics-STAR-Lab/SOAR/raw/main/assets/videos/overview.gif"
+        badge: "RA-L 2025 · ICRA 2026",
+        title: "REBot",
+        subtitle: "郝策老师论文：Reflexive Evasion Robot",
+        tags: ["#CeHao", "#RA-L", "#Quadruped"],
+        link: "https://rebot-2025.github.io/",
+        image: "https://rebot-2025.github.io/figure/framework.png"
       },
       {
         badge: "IROS 2024",
@@ -372,39 +372,39 @@ const siteContent = {
     reposKicker: "Open Source Papers",
     reposTitle: "Open Paper Cards (ICRA / IROS / RA-L)",
     reposIntro:
-      "The showcase now focuses on open-source papers. Cards link directly to repositories or paper pages, including ICRA, IROS, RA-L, and your EquiMus example.",
+      "The feed now includes your official EquiMus repository plus selected papers from Prof. Hao Ce's homepage across ICRA, IROS, and RA-L with preview images.",
     repoCards: [
       {
         badge: "RA-L 2025",
-        title:
-          "EquiMus: Energy-Equivalent Dynamic Modeling and Simulation of Musculoskeletal Robots",
-        subtitle: "Your project spotlight in this paper feed",
+        title: "EquiMus",
+        subtitle: "Official repository for musculoskeletal robot modeling and simulation",
         tags: ["#EquiMus", "#Musculoskeletal", "#RA-L"],
-        link: "https://www.catalyzex.com/paper/equimus-energy-equivalent-dynamic-modeling"
+        link: "https://github.com/fly-pigTH/EquiMus",
+        image: "https://opengraph.githubassets.com/1/fly-pigTH/EquiMus"
       },
       {
         badge: "ICRA 2024",
-        title: "FC-Planner",
-        subtitle: "Fast aerial coverage in complex 3D environments",
-        tags: ["#CoveragePlanning", "#UAV", "#OpenSource"],
-        link: "https://github.com/HKUST-Aerial-Robotics/FC-Planner",
-        image: "https://github.com/HKUST-Aerial-Robotics/FC-Planner/raw/master/misc/top_2024.png"
+        title: "GAMMA",
+        subtitle: "Generalizable Articulation Modeling and Manipulation (Hao Ce)",
+        tags: ["#CeHao", "#ICRA", "#Articulation"],
+        link: "https://sites.google.com/view/gamma-articulation",
+        image: "https://lh3.googleusercontent.com/sitesv/APaQ0SRRHXpVGBRtkiZeH-N2s1YzOaLOR_SvvlsTpesIPs_3302K0kY-2rLC_U4l2YsTTMZ6Kuep_LP7Geb8caYuj9rsPPIv3-a7NerIK3wgx8wBvVXSNYfjg54YojrsUU4XVHSsMp_oDubDL2DinBxRckHVu-S5_B-6fS2GsgkX7rqhU8c1-2MTSq5oQe_3jY4HbbUJPzL67TG8Qqtd_AnxkvtcCacQvIygut2Xw_8%3Dw1280"
       },
       {
-        badge: "IROS 2024",
-        title: "OmniNxt",
-        subtitle: "Open-source compact aerial robot with omni-vision",
-        tags: ["#AerialRobot", "#OmniVision", "#OpenSource"],
-        link: "https://github.com/HKUST-Aerial-Robotics/OmniNxt",
-        image: "https://github.com/HKUST-Aerial-Robotics/OmniNxt/raw/main/misc/system_overview.png"
+        badge: "RA-L 2024 · IROS 2024",
+        title: "Skill-Critic",
+        subtitle: "Refining Learned Skills for Hierarchical Reinforcement Learning (Hao Ce)",
+        tags: ["#CeHao", "#IROS", "#RA-L"],
+        link: "https://sites.google.com/view/skill-critic",
+        image: "https://lh3.googleusercontent.com/sitesv/APaQ0STPzwDOVVpO-BGGagg5S6uR-ox4gY8SL9cVUlEof982wlFapg9ljGyvhlgk9OWLU84uiTALILRBqHHOI6SJ6bH8l6dgiXIWcbuJ84LzHlO1GgT5XAB_9BOF6dhPTMYPPoQjUeQckpUa6xVbWHgfJc2N51zW45GHIIyrkcK3XapKamxtWP38pLxCb6FhFGungddqb77Gkq7EGQm-DTrq2aAqFYz2ZSE3Xxc2%3Dw1280"
       },
       {
-        badge: "IROS 2024",
-        title: "SOAR",
-        subtitle: "Synchronous exploration and reconstruction with heterogeneous UAVs",
-        tags: ["#MultiUAV", "#Reconstruction", "#Planner"],
-        link: "https://github.com/Robotics-STAR-Lab/SOAR",
-        image: "https://github.com/Robotics-STAR-Lab/SOAR/raw/main/assets/videos/overview.gif"
+        badge: "RA-L 2025 · ICRA 2026",
+        title: "REBot",
+        subtitle: "Reflexive Evasion Robot (Hao Ce)",
+        tags: ["#CeHao", "#RA-L", "#Quadruped"],
+        link: "https://rebot-2025.github.io/",
+        image: "https://rebot-2025.github.io/figure/framework.png"
       },
       {
         badge: "IROS 2024",
